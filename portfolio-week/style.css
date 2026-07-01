@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #f4f1ea;
+  color: #0d1b2a;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+.site-header{
+    background:#0d1b2a;
+    color:#f4f1ea;
+    padding:70px 0;
+}
+
+.header-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+}
+
+.header-text{
+    flex:1;
+}
+
+.header-text h1{
+    color:#d4af37;
+    font-size:3rem;
+    margin-bottom:12px;
+}
+
+.tagline{
+    font-size:1.1rem;
+}
+
+.header-image img{
+
+    width:240px;
+    height:240px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #d4af37;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.section-alt {
+  background-color: #ece7d9;
+}
+
+.section h2 {
+  color: #0d1b2a;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  border-left: 5px solid #d4af37;
+  padding-left: 12px;
+}
+
+.section p {
+  max-width: 700px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: flex-start;
+}
+
+.skill-card {
+  background-color: #ffffff;
+  border-top: 4px solid #d4af37;
+  border-radius: 8px;
+  padding: 24px;
+  flex: 1 1 220px; /* grow, shrink, base width of 220px */
+  box-shadow: 0 2px 8px rgba(13, 27, 42, 0.08);
+}
+
+.skill-card h3 {
+  color: #0d1b2a;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+
+.skill-card ul {
+  list-style: none;
+}
+
+.skill-card li {
+  padding: 4px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.skill-card li:last-child {
+  border-bottom: none;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.contact-btn {
+  display: inline-block;
+  background-color: #0d1b2a;
+  color: #f4f1ea;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.contact-btn:hover {
+  background-color: #d4af37;
+  color: #0d1b2a;
+}
+
+.site-footer {
+  background-color: #0d1b2a;
+  color: #f4f1ea;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .site-header h1 {
+    font-size: 2rem;
+  }
+
+  .header-content{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.header-image img{
+    width:180px;
+    height:180px;
+}
+
+.header-text h1{
+    font-size:2.2rem;
+}
+
+  .tagline {
+    font-size: 0.95rem;
+  }
+
+  .section {
+    padding: 40px 0;
+  }
+
+  .skill-card {
+    flex: 1 1 100%; /* full width cards on small screens */
+  }
+
+  .contact-links {
+    flex-direction: column;
+  }
+
+  .contact-btn {
+    text-align: center;
+  }
+}
